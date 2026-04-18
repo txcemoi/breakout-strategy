@@ -2,7 +2,7 @@
 
 ## Strategy Logic
 
-This project implements a long-only breakout trading strategy using historical daily price data for QQQ. The core idea is that when price closes above its recent rolling high, it may signal the beginning of a new upward trend. A long position is opened at the next trading day’s open after a breakout signal appears. 
+This project implements a long-only breakout trading strategy using historical daily price data for QQQ. The core idea is that when price closes above its recent rolling high, it may signal the beginning of a new upward trend. A long position is opened at the next trading day’s open after a breakout signal appears.
 
 Once in a trade, the position is closed based on three possible conditions: hitting a profit target, triggering a stop-loss, or reaching a predefined timeout period. To avoid overfitting, I use a rolling walk-forward framework, where approximately one year of data is used for parameter selection, and the following period is used for out-of-sample testing.
 
@@ -57,25 +57,30 @@ The strategy achieved a high win rate and strong profit factor, but the negative
 ## Trade Blotter
 
 - [Download Trade Blotter CSV](outputs/blotter.csv)
-
-<iframe src="outputs/trades_table.html" width="100%" height="400"></iframe>
+- [Interactive Trade Table](outputs/trades_table.html)
 
 ---
 
 ## Trade Outcome Analysis
 
-<iframe src="outputs/trade_outcomes.html" width="100%" height="500"></iframe>
-
+- [Trade Outcome Histogram](outputs/trade_outcomes.html)
 - [Outcome Summary CSV](outputs/outcome_summary.csv)
 
 ---
 
-## Equity Curve
+## Equity Curve and Metrics
 
-<iframe src="outputs/equity_curve.html" width="100%" height="500"></iframe>
-
-- [Metrics CSV](outputs/metrics.csv)  
+- [Equity Curve](outputs/equity_curve.html)
+- [Metrics CSV](outputs/metrics.csv)
 - [Walk-forward Parameter Log](outputs/walkforward_params.csv)
+
+---
+
+## Interpretation
+
+One interesting observation is that all trades in this backtest were classified as "Timed out." This suggests that the chosen profit target and stop-loss levels were not frequently reached within the holding period. In other words, while breakout signals were generated, the price movements were not strong enough to trigger exits based on these thresholds.
+
+This highlights a limitation of the current parameter choices and suggests that further tuning or alternative exit rules may improve performance. Despite this, the project demonstrates a complete workflow for building and evaluating a systematic trading strategy.
 
 ---
 
