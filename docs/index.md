@@ -63,26 +63,26 @@ The strategy achieved a relatively high win rate and strong profit factor, which
 
 ## Trade Blotter
 
-- [Download Trade Blotter CSV](../outputs/blotter.csv)
+- [Download Trade Blotter CSV](/breakout-strategy/outputs/blotter.csv)
 
-<iframe src="../outputs/trades_table.html" width="100%" height="400"></iframe>
+<iframe src="/breakout-strategy/outputs/trades_table.html" width="100%" height="400"></iframe>
 
 ---
 
 ## Trade Outcome Analysis
 
-<iframe src="../outputs/trade_outcomes.html" width="100%" height="500"></iframe>
+<iframe src="/breakout-strategy/outputs/trade_outcomes.html" width="100%" height="500"></iframe>
 
-- [Outcome Summary CSV](../outputs/outcome_summary.csv)
+- [Outcome Summary CSV](/breakout-strategy/outputs/outcome_summary.csv)
 
 ---
 
 ## Equity Curve and Metrics
 
-<iframe src="../outputs/equity_curve.html" width="100%" height="500"></iframe>
+<iframe src="/breakout-strategy/outputs/equity_curve.html" width="100%" height="500"></iframe>
 
-- [Metrics CSV](../outputs/metrics.csv)  
-- [Walk-forward Parameter Log](../outputs/walkforward_params.csv)
+- [Metrics CSV](/breakout-strategy/outputs/metrics.csv)  
+- [Walk-forward Parameter Log](/breakout-strategy/outputs/walkforward_params.csv)
 
 ---
 
