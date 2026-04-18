@@ -1,0 +1,11 @@
+{
+  "num_trades": 10,
+  "average_return_per_trade": 0.0119896,
+  "win_rate": 0.8,
+  "profit_factor": 7.564567769477055,
+  "expectancy": 615.1,
+  "max_drawdown": -0.04680994928761173,
+  "sharpe_ratio_annualized": -0.3617959149198899,
+  "sortino_ratio_annualized": -0.22702776465226904,
+  "risk_free_rate_assumption": 0.02
+}

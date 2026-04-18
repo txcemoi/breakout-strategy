@@ -1,0 +1,2 @@
+num_trades,average_return_per_trade,win_rate,profit_factor,expectancy,max_drawdown,sharpe_ratio_annualized,sortino_ratio_annualized,risk_free_rate_assumption
+10,0.0119896,0.8,7.564567769477055,615.1,-0.04680994928761173,-0.3617959149198899,-0.22702776465226904,0.02
